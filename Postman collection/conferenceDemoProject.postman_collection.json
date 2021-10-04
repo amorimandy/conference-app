@@ -1,0 +1,287 @@
+{
+	"info": {
+		"_postman_id": "0c99c02d-7f7b-4800-be95-89862c076218",
+		"name": "conferenceDemoProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Speakers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/speakers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"speakers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Speaker",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Andy\",\n    \"last_name\": \"Amorim\",\n    \"title\": \"\",\n    \"company\": \"\",\n    \"speaker_bio\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/speakers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"speakers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Speaker",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Andy\",\n    \"last_name\": \"Amorim\",\n    \"title\": \"\",\n    \"company\": \"BEES\",\n    \"speaker_bio\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/speakers/42",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"speakers",
+						"42"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Speaker",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Andy\",\n    \"last_name\": \"Amorim\",\n    \"title\": \"\",\n    \"company\": \"BEES\",\n    \"speaker_bio\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/speakers/42",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"speakers",
+						"42"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Session",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"session_name\": \"Don's Great Session Extravaganza\",\n    \"session_description\": \"This will be one of the best conference you might ever attend. Come and see how awesome it is for yourself.\",\n    \"session_length\": 45\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/sessions",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sessions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Session",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"session_name\": \"Don's Great Session Extravaganza\",\n    \"session_description\": \"This will be one of the best conference you might ever attend. Come and see how awesome it is for yourself.\",\n    \"session_length\": 55\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/sessions/93",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sessions",
+						"93"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Session",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"session_name\": \"Don's Great Session Extravaganza\",\n    \"session_description\": \"This will be one of the best conference you might ever attend. Come and see how awesome it is for yourself.\",\n    \"session_length\": 45\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/sessions/93",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sessions",
+						"93"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Sessions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/sessions",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sessions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Session by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/sessions/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sessions",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Speaker by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/speakers/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"speakers",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get App version",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
